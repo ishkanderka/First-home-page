@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo School</title>
+    <style>
+      body {
+        padding: 50px;
+        background: #f7f7f7;
+      }
+      h1 {
+        font-size: 56px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #f70776;
+        margin-top: 10px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        
+      }
+      h2 {
+        text-align: center;
+        margin: 20;
+        color: #680747;
+        text-transform: uppercase;
+        font-size: large;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+      .container {
+        display: flex;
+      }
+
+      .container>* {
+        flex: 1;
+      }
+
+      .imagebox {
+        position: relative;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .container-text {
+        padding: 1rem;
+        color: #393e46;
+        text-decoration: solid;
+        font-size: 22px;
+        background-color: #d8f3fc;
+        text-transform: uppercase;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+
+      .author {
+        font-size: 18px;
+      }
+
+      a {
+        color: #393e46;
+        transition: all 200ms ease-in-out;
+      }
+
+      a:hover {
+        color: #fcc820;
+
+      }
+      h3 {
+        text-align: center;
+        margin: 15;
+        display: block;
+        color: #680747;
+        line-height: 1.3;
+        font-size: 22px;
+      }
+
+      h4 {
+        font-size: 1.5rem !important;
+        line-height: 1.25 !important;
+        font-family: "Recoleta-Medium" !important;
+        color: #c3195d;
+        text-align: center;
+        display: block;
+        text-transform: uppercase;
+        margin-top: 50px;
+        margin-bottom: 15px;
+      }
+
+      ul {
+        list-style: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: roc-grotesk-wide !important;
+        color: #c3195d;
+        font-size: 22px;
+        display: inline-block;
+        line-height: 1.7;
+        width: 100%;
+        height: 100%;
+        background-color: #fdf3f3;
+        margin-left: -20px;
+        padding-left: 20px;
+      }
+
+      button {
+        color: #ffffff;
+        background: #c3195d;
+        padding: 15px 65px;
+        display: block;
+        margin: 20px auto 0 auto;
+        border: 1px solid #680747;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        font-size: 18px;
+        font-family: roc-grotesk-wide !important;
+        font-weight: bold;
+      }
+      
+      button:hover {
+        background-color: #fcc820; 
+        color: #393e46;
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>
+      <strong>Catch the Moment</strong>
+    </h1>
+    <h2>Flexible & self-paced photography courses in a virtual classroom</h2>
+    <br/>
+    <div class="container">
+      <div class="imagebox">
+        <img
+        class="container-image"
+        src="https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2021/09/photographers-on-tiktok.jpg?resize=1250,1120"
+        width="100%"
+        height="auto"
+        alt="Girl with camera"
+      />
+    </div>
+    <div class="container-text">
+      <p>
+        <br/>
+        <br/>
+        <br/>
+        <a href="https://www.colesclassroom.com/26-famous-photographers/" target="_blank">
+        Photography is a way of feeling, of touching, of loving. <br />
+        It remembers little things, long after you have forgotten everything. </a>
+        <p class="author">- Aaron Siskind -</p>
+      </p>
+    </div>
+    </div>
+    <h3 style="clear: left">
+      <br />
+      <hr />
+      We help photographers like you level up your skills and your creativity. <br/>
+      Offering classes and workshops for all skill levels that are both fun and informative. <br />
+      From beginner to expert, you can find your focus at the <span class="school"> Catch the Moment </span> school of photography <br/>💛 📸 💛
+      <hr/>
+    </h3>
+    <h4>
+      What do you want to learn?
+    </h4>
+    <ul>
+      <li>Basics</li>
+      <li>Composition</li>
+      <li>Creativity</li>
+      <li>Editing</li>
+      <li>Light & Lighting</li>
+      <li>Storytelling</li>
+    </ul>
+    <button>CHOOSE A CLASS</button>
+    <script>
+      function choose() {
+        let name = prompt("What is your name?");
+        let course = prompt("What do you want to learn?");
+        let email = prompt("What is your email address?");
+        alert("Thank you, " + name + "! We'll send you an invitation information about " + course + " classes to " + email + " ! 💛 ");
+      }
+      let chooseClassButton = document.querySelector("button");
+      chooseClassButton.addEventListener("click", choose);
+    </script>
+  </body>
+</html>
